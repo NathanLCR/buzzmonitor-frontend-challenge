@@ -1,0 +1,19 @@
+* {
+  padding: none;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto Mono';
+}
+
+body {
+  background: linear-gradient(to bottom right, #1d2973, #4887ee) no-repeat fixed
+    center;
+  background-repeat: unset;
+  background-size: cover;
+  flex-direction: column;
+  padding: 10px;
+}
+.app {
+  display: flex;
+}
