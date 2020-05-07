@@ -5,15 +5,17 @@
   margin: 0;
   font-family: 'Roboto Mono';
 }
-
+html,
+body {
+  height: 100%;
+}
 body {
   background: linear-gradient(to bottom right, #1d2973, #4887ee) no-repeat fixed
     center;
-  background-repeat: unset;
-  background-size: cover;
-  flex-direction: column;
-  padding: 10px;
-}
-.app {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  margin: auto;
 }
