@@ -24,8 +24,10 @@ export const BoardContainer = styled.div`
   }
 `;
 
-export const PileContainer = styled.div`
+export const PileContainer = styled.button`
   display: flex;
+  outline: none;
+  background: none;
   align-items: center;
   margin-bottom: 16px;
   flex-direction: row;
@@ -48,7 +50,7 @@ export const RestartButton = styled.button`
   color: white;
 `;
 
-export const PileButton = styled.button`
+export const PileIndex = styled.div`
   width: 60px;
   height: 60px;
   background: #4887ee;
@@ -56,6 +58,9 @@ export const PileButton = styled.button`
   color: white;
   margin-bottom: 5px;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Title = styled.h1`
@@ -64,7 +69,7 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  margin: 8px;
+  margin: 10px;
   text-align: center;
   font-size: 20px;
 `;

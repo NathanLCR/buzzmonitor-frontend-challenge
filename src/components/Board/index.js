@@ -7,7 +7,7 @@ import {
   Container,
   RestartButton,
   PileContainer,
-  PileButton,
+  PileIndex,
   Title,
   Subtitle,
   BoardContainer,
@@ -120,10 +120,10 @@ function Main() {
       <BoardContainer>
         {rounds <= 2 &&
           deck.map((pile, index) => (
-            <PileContainer key={index}>
-              <PileButton onClick={() => playRound(index)}>
+            <PileContainer key={index} onClick={() => playRound(index)}>
+              <PileIndex onClick={() => playRound(index)}>
                 {index + 1}
-              </PileButton>
+              </PileIndex>
               <Pile cards={pile} index={index} />
             </PileContainer>
           ))}
