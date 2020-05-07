@@ -14,14 +14,14 @@ import {
   ChangeLanguageButton,
   ChangeLanguageContainer,
 } from './styles';
-import texts from '../../utils/texts';
+import languages from '../../utils/languages';
 
 function Main() {
   const [deck, setDeck] = useState([]);
 
   const [rounds, setRounds] = useState(0);
 
-  const [language, setLanguage] = useState(texts[1]);
+  const [language, setLanguage] = useState(languages[1]);
 
   const [instructionIndex, setInstructionsIndex] = useState(0);
 
@@ -52,7 +52,7 @@ function Main() {
       position 1 is english
       and position 2 is brazilian portugues
     */
-    setLanguage(texts[languageIndex]);
+    setLanguage(languages[languageIndex]);
   }
 
   function restart() {
@@ -115,7 +115,7 @@ function Main() {
   return (
     <Container>
       <Title>{language.title}</Title>
-      <Subtitle>{language.subtitle}</Subtitle>
+      {rounds <= 2 && <Subtitle>{language.subtitle}</Subtitle>}
       <Subtitle>{language.instructions[instructionIndex]}</Subtitle>
       <BoardContainer>
         {rounds <= 2 &&
