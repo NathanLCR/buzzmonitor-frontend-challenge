@@ -35,8 +35,8 @@ function DropdownLanguageMenu({ language, setLanguage }) {
       </MenuTitle>
       {showMenu && (
         <Menu className="dd-list">
-          {language.otherLanguages.map((lang) => (
-            <Item onClick={() => changueLanguage(lang.indexCode)}>
+          {language.otherLanguages.map((lang, index) => (
+            <Item onClick={() => changueLanguage(lang.indexCode)} key={index}>
               <ReactCountryFlag
                 countryCode={lang.countryCode}
                 svg
