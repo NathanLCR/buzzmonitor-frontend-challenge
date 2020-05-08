@@ -19,6 +19,7 @@ function DropdownLanguageMenu({ language, setLanguage }) {
       and position 3 is es
     */
     setLanguage(languages[languageIndex]);
+    setShowMenu(!showMenu);
   }
   return (
     <Container>

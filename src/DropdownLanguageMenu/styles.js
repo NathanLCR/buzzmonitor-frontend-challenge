@@ -30,7 +30,7 @@ export const Menu = styled.div`
 `;
 
 export const Item = styled.button`
-  width: 100px;
+  width: 120px;
   height: 40px;
   display: block;
   background: #f62e4b;
@@ -41,4 +41,7 @@ export const Item = styled.button`
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
+  @media (max-width: 650px) {
+    margin-left: 10px;
+  }
 `;
