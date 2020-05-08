@@ -17,6 +17,7 @@ export const MenuTitle = styled.button`
   justify-content: space-around;
   text-align: center;
   align-items: center;
+  font-size: 14px;
 `;
 
 export const Menu = styled.div`
@@ -35,4 +36,5 @@ export const Item = styled.button`
   justify-content: space-around;
   text-align: center;
   align-items: center;
+  font-size: 14px;
 `;
