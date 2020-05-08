@@ -7,15 +7,10 @@
   color: white;
 }
 html,
-body,
-.App {
+body {
   height: 100%;
 }
 body {
   background: linear-gradient(to bottom right, #1d2973, #4887ee) no-repeat fixed
     center;
-}
-.App {
-  display: flex;
-  height: 100vh;
 }

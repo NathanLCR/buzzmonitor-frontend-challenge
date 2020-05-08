@@ -17,7 +17,12 @@ Or you can clone it, use `yarn` to install dependencies, and run with `yarn star
   To make the request from the api.
 
 - ## [Styled-Components](https://styled-components.com)
-  To make it easier the stylization
 
-* ## [Heroku](https://www.heroku.com)
+  To make it easier the stylization.
+
+- ## [ReactCountryFlag](https://github.com/danalloway/react-country-flag)
+
+  To get the countries flags to the dropdown menu of language selection.
+
+- ## [Heroku](https://www.heroku.com)
   To deploy the application.

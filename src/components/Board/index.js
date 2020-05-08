@@ -11,17 +11,12 @@ import {
   Title,
   Subtitle,
   BoardContainer,
-  ChangeLanguageButton,
-  ChangeLanguageContainer,
 } from './styles';
-import languages from '../../utils/languages';
 
-function Main() {
+function Main({ language }) {
   const [deck, setDeck] = useState([]);
 
   const [rounds, setRounds] = useState(0);
-
-  const [language, setLanguage] = useState(languages[1]);
 
   const [instructionIndex, setInstructionsIndex] = useState(0);
 
@@ -30,6 +25,7 @@ function Main() {
     This function make an api request to get 21 cards from deckofcardsapi,
     then and divide the in 3 arrays with 7 cards each
     */
+
     api.get('new/draw/?count=21').then((response) => {
       const cards = response.data.cards;
 
@@ -45,15 +41,6 @@ function Main() {
       setDeck([[...pile1], [...pile2], [...pile3]]);
     });
   }, []);
-
-  function changueLanguage(languageIndex) {
-    /*
-      Here just change the positions of the array of languages, 
-      position 1 is english
-      and position 2 is brazilian portugues
-    */
-    setLanguage(languages[languageIndex]);
-  }
 
   function restart() {
     /*
@@ -136,14 +123,6 @@ function Main() {
           </RestartButton>
         </>
       )}
-      <ChangeLanguageContainer>
-        <ChangeLanguageButton onClick={() => changueLanguage(1)}>
-          Pt-BR
-        </ChangeLanguageButton>
-        <ChangeLanguageButton onClick={() => changueLanguage(0)}>
-          En
-        </ChangeLanguageButton>
-      </ChangeLanguageContainer>
     </Container>
   );
 }

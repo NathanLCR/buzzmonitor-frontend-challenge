@@ -73,17 +73,3 @@ export const Subtitle = styled.p`
   text-align: center;
   font-size: 20px;
 `;
-
-export const ChangeLanguageContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-export const ChangeLanguageButton = styled.button`
-  width: 130px;
-  height: 30px;
-  margin: 10px;
-  background: #46d7ac;
-  color: white;
-  border-radius: 10px;
-`;
