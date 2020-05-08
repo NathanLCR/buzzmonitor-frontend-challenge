@@ -6,7 +6,7 @@ This project uses reactjs, and the [deck of cards api](https://deckofcardsapi.co
 
 Or you can clone it, use `yarn` to install dependencies, and run with `yarn start`.
 
-## Technologies useds
+## Technologies used
 
 - ## [ReactJs](https://pt-br.reactjs.org)
 

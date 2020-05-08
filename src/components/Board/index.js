@@ -15,8 +15,10 @@ import {
 
 function Main({ language }) {
   const [deck, setDeck] = useState([]);
+  //State to store the cards.
 
   const [rounds, setRounds] = useState(0);
+  //State with the number of rounds played
 
   const [instructionIndex, setInstructionsIndex] = useState(0);
 
