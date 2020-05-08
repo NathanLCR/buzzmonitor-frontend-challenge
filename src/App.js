@@ -5,7 +5,7 @@ import languages from './utils/languages';
 import DropdownLanguageMenu from './DropdownLanguageMenu';
 
 function App() {
-  const [language, setLanguage] = useState(languages[1]);
+  const [language, setLanguage] = useState(languages[0]);
   return (
     <div className="App">
       <DropdownLanguageMenu

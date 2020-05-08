@@ -66,10 +66,10 @@ const texts = [
     currentLanguage: 'Espanol',
     countryCode: 'ES',
     title: 'Apuesto a que puedo leer tu mente',
-    subtitle: '¿No te lo crees? Tomar el examen',
+    subtitle: '¿No te lo crees? Toma el examen',
     instructions: [
       'Elige una carta y haz clic en la pila donde está',
-      'Ahora elige la pila donde está tu carta',
+      'Ahora elige la linea donde está tu carta',
       '¡Creo que ésta es tu carta!',
     ],
     restartButton: 'Jugar de nuevo',
