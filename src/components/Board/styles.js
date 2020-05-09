@@ -24,20 +24,6 @@ export const BoardContainer = styled.div`
   }
 `;
 
-export const PileContainer = styled.button`
-  display: flex;
-  outline: none;
-  background: none;
-  align-items: center;
-  margin-bottom: 16px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 900px) {
-    flex-direction: column;
-  }
-`;
-
 export const RestartButton = styled.button`
   width: 300px;
   height: 50px;
@@ -48,19 +34,6 @@ export const RestartButton = styled.button`
   background: #4887ee;
   font-size: 26px;
   color: white;
-`;
-
-export const PileIndex = styled.div`
-  width: 60px;
-  height: 60px;
-  background: #4887ee;
-  border-radius: 10px;
-  color: white;
-  margin-bottom: 5px;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const Title = styled.h1`

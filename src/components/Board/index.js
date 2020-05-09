@@ -6,8 +6,6 @@ import Card from '../Card';
 import {
   Container,
   RestartButton,
-  PileContainer,
-  PileIndex,
   Title,
   Subtitle,
   BoardContainer,
@@ -109,12 +107,12 @@ function Main({ language }) {
       <BoardContainer>
         {rounds <= 2 &&
           deck.map((pile, index) => (
-            <PileContainer key={index} onClick={() => playRound(index)}>
-              <PileIndex onClick={() => playRound(index)}>
-                {index + 1}
-              </PileIndex>
-              <Pile cards={pile} index={index} />
-            </PileContainer>
+            <Pile
+              cards={pile}
+              key={index}
+              index={index}
+              playRound={playRound}
+            />
           ))}
       </BoardContainer>
       {rounds > 2 && (
