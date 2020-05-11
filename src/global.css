@@ -14,3 +14,7 @@ body {
   background: linear-gradient(to bottom right, #1d2973, #4887ee) no-repeat fixed
     center;
 }
+
+button {
+  cursor: pointer;
+}
